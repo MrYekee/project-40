@@ -1,0 +1,69 @@
+
+body {
+     background-color: 	#fdfdfd;
+     /*color: #fdfdfd;*/
+     padding-top: 88px; /* this is to make the Body to drop down by 87px to make room for the header at the top  */
+}
+/*
+ * Formatting the header area
+ */
+.header {
+       position: fixed;
+ /*      display: flex;   */
+       top: -10px;
+       width: 112%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       z-index: 1;
+}
+
+
+/*                LOGIN BUTTON         */
+#btn-login{
+      color: white;
+      text-shadow: 1px 1px 3px #000000;
+}
+/*                LOGIN BUTTON - ABOVE         */
+
+/* BELOW IS THE CSS FOR THE MAIN LOGO AND THE SIGNIN BUTTON*/
+#first {
+    margin-top: 30px;
+    }
+
+.menu {
+  float: right;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+.menu li {
+  display: inline-block;
+
+
+}
+
+.menu li + li {
+  margin-left: 0px;
+
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+/* ABOVE IS THE CSS FOR THE MAIN LOGO AND THE SIGNIN BUTTON*/
+
+
+/*
+ * Centering the body content
+ */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.yourChat{
+
+     width: 20%;
+}
+

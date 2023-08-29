@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>MobiCash</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobicash.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<!--
+      <header>
+      <div class="container">
+          <h1 class="logo"><img class="img-responsive" src="{{url_for('static', filename='mobiwasher.PNG')}}"/></h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('hero') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#" class="navbar-brand">
+        <img class="img-responsive" src="{{url_for('static', filename='black.PNG')}}" height="28"/>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="#" class="nav-item nav-link">Messages</a>
+            <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">Login</a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<!--this is just a test od something-->
+<div class="container">
+
+          <div class="introduction">INTRODUCING</div>
+
+          <div class="row justify-content-center">
+                   <div class="col-sm-6">
+                         <img class="img-responsive" src="{{url_for('static', filename='Logo5.PNG')}}">
+                   </div>
+               <div class="register-form">
+
+                         <div class="jumbotron text-center" aria-rowindex="3">
+                             <h4>REGISTRATION FORM</h4>
+                             <span>Take special attention to the password</span>
+                         </div>
+
+                   <form>
+                         <div class="row justify-content-end">
+                            <div class="col-sm-6">
+
+                                    <!--<span class="input-group-addon" id="basic-addon1">First Name:</span>-->
+                                    <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+
+                            </div>
+
+                            <div class="col-sm-6 pb-1">
+                                 <!--<span class="input-group-addon" id="basic-addon1">Last Name:</span>-->
+                                 <input type="text" class="form-control" placeholder="Surname" aria-describedby="basic-addon1">
+                            </div>
+                         </div>
+
+                        <div class="row justify-content-end">
+                            <div class="col-sm-6 pb-1">
+                                 <!--<span class="input-group-addon" id="basic-addon1">Age:</span>-->
+                                 <input type="text" class="form-control" placeholder="Isiduko" aria-describedby="basic-addon1">
+
+                            </div>
+
+                            <div class="col-sm-6 pb-1">
+                                 <!--<span class="input-group-addon" id="basic-addon1">Gender:</span>-->
+                                 <input type="text" class="form-control" placeholder="Uhlala phi" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end">
+                            <div class="col-sm-6 pb-1">
+                                 <!--<span class="input-group-addon" id="basic-addon1">Age:</span>-->
+                                 <input type="text" class="form-control" placeholder="Cell phone" aria-describedby="basic-addon1">
+
+                            </div>
+
+                            <div class="col-sm-6 pb-1">
+                                 <!--<span class="input-group-addon" id="basic-addon1">Gender:</span>-->
+                                 <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                       <div class="form-group row">
+                          <div class="col-sm-6 pb-1">
+                             <div class="form-group">
+
+                                 <button class="btn-info btn">SIGN UP</button>
+
+                             </div>
+                          </div>
+                       </div>
+
+                  </form>
+               </div>
+          </div>
+</div>
+<!--this is the end of the test of something-->
+
+ <video src="{{url_for('static', filename='sanelevid.mp4')}}" controls width="1000" height="500">Oops...sorry the video is not available at the moment</video>
+
+<hr width="80%">
+
+<img class="img-responsive" src="{{url_for('static', filename='TryShop.PNG')}}" width="20%" height="20%">
+
+      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{url_for('static', filename='olmobi.PNG')}}"/>
+        </div>
+        <div class="carousel-item">
+            <img src="{{url_for('static', filename='Jumbo.PNG')}}"/>
+        </div>
+        <div class="carousel-item">
+            <img src="{{url_for('static', filename='XE.PNG')}}"/>
+        </div>
+
+        <div class="carousel-item">
+            <img src="{{url_for('static', filename='zama.PNG')}}"/>
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+
+ <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

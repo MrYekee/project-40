@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MobiTown</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h1 class="logo"><img src="{{url_for('static', filename='mobitownlogo.PNG')}}"/></h1>
+    <header>
+      <div class="container">
+
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('about') }}">XE</a></li>
+            <li><a href="{{ url_for('mobitown') }}">MobiCash</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+
+
+
+        <!-- this form is my alternative to the one below-->
+            <div class="col-sm-6">
+                  <img class="Wash" src="{{url_for('static', filename='Logo4.PNG')}}">
+            </div>
+
+
+
+
+
+      <div class="container">
+    <div class="jumbotron text-center">
+        <h2>Form</h2>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">First Name:</span>
+                            <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Last Name:</span>
+                            <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Age:</span>
+                            <input type="text" class="form-control" placeholder="Age" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Gender:</span>
+                            <input type="text" class="form-control" placeholder="Gender" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Email Address:</span>
+                            <input type="text" class="form-control" placeholder="Email Address" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">Phone Number:</span>
+                            <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" rows="3" placeholder="Additional comments"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-default btn-lg">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+      </div>-->
+
+
+
+
+    <!--
+<div class="container">
+        <div class="col-sm-6">
+           <img class="Wash" src="{{url_for('static', filename='Logo4.PNG')}}">
+        </div>
+
+
+    <!--<div class="container">
+
+      <form action="." method="post">
+        <div class="form-group row">
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+
+                       <input type="text" name="name" class="form-control" placeholder="Name">
+
+                </div>
+            </div>
+
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+                       <input type="text" name="surname" class="form-control" placeholder="Surname">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+                       <input type="text" name="clanname" class="form-control" placeholder="Isiduko/ Clan Name">
+
+                </div>
+            </div>
+
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+
+                       <select class="form-control" id="exampleFormControlSelect1">
+                               <option>Manzana</option>
+                               <option>Mthwaku</option>
+                               <option>Xolobeni</option>
+                               <option>Ntukwana</option>
+                               <option>Dunge</option>
+                       </select>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+                       <input type="text" name="cellnumber" class="form-control" placeholder="Cell Number">
+
+                </div>
+            </div>
+
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+                       <input type="text" name="password" class="form-control" placeholder="Password">
+                       <small id="passwordHelpInline" class="text-muted">Must be 5-10 characters long.</small>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-6 pb-1">
+                <div class="form-group">
+
+
+                    <button class="btn-info btn">SIGN UP</button>
+
+                </div>
+            </div>
+        </div>
+        </form>
+
+    <!--</div>-->
+   <!-- </div>-->
+
+    <hr/>
+    <h3 style="color:Green;" align="center">The digital world is upon us. Introducing Eastern Cape's FIRST mobile car wash</h3>
+    <hr/>
+
+      <p align="center">You have come to the right place for all your MOBILE cleaning needs</p>
+      <hr/>
+      <br>
+      <p>Welcome</p>
+
+
+      <p>This is to test some css properties</p>
+      <br>
+      <!-- the following is just something i saw on the net about bootstrap -->
+      <form>
+           <div class="form-group">
+               <label for="formControlRange">HOW SATISFIED ARE YOU WITH OUR WEB APP</label>
+               <input type="range" class="form-control-range" id="formControlRange">
+           </div>
+      </form>
+      <!-- the above is just something i saw on the net about bootstrap -->
+
+      <hr/>
+      <img src="{{url_for('static', filename='PRICES.PNG')}}" width="100%" height="50%"/>
+      <hr/>
+      <img src="{{url_for('static', filename='KRACA.PNG')}}"/>
+      <hr/>
+      <img src="{{url_for('static', filename='GOOD5.PNG')}}"/>
+      <hr/>
+      <img src="{{url_for('static', filename='EMPIRE state of MIND.PNG')}}"/>
+      <br>
+      <a href="mailto:sanele.sokweba@gmail.com">Email Help Desk</a>
+      <br>
+      <a href="#top">Back to top of page </a>
+      <hr/>
+
+
+
+     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

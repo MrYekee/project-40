@@ -1,0 +1,28 @@
+body {
+     background-color: 	#cfcfcf;
+     color: #cfcfcf;
+     padding-top: 104px; /* this is to make the Body to drop down by 87px to make room for the header at the top  */
+}
+
+/*                   below is the css to make the header fixed. It's also to make it stick to the top          */
+.top-header {
+       position: fixed;
+ /*      display: flex;   */
+       top: 0px;
+       width: 112%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       z-index: 1;
+}
+         /*                the end of the style to fix the header at the top         */
+
+
+.time2time{
+
+      top: -30px;
+}
+
+.col-sm-10{
+
+     display: flex;
+}

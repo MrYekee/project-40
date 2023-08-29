@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hero</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/Hero.css') }}">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- these 2 below-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--these 2 above-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro">
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// Highlight bottom nav links
+		var clickEvent = false;
+		$("#myCarousel").on("click", ".nav a", function(){
+			clickEvent = true;
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");
+		}).on("slid.bs.carousel", function(e){
+			if(!clickEvent){
+				itemIndex = $(e.relatedTarget).index();
+				targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+				$(".nav li").not(targetNavItem).removeClass("active");
+				targetNavItem.addClass("active");
+			}
+			clickEvent = false;
+		});
+	});
+</script>
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand" href="#" style="font-family: Maven Pro">Yekee</a>
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+			<li class="nav-item dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#" class="dropdown-item">Web Design</a></li>
+					<li><a href="#" class="dropdown-item">Web Development</a></li>
+					<li><a href="#" class="dropdown-item">Graphic Design</a></li>
+					<li><a href="#" class="dropdown-item">Digital Marketing</a></li>
+				</ul>
+			</li>
+			<li class="nav-item active"><a href="#" class="nav-link">Pricing</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+		</ul>
+		<form class="navbar-form form-inline search-form">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search...">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+				</span>
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right ml-auto">
+			<li class="nav-item dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#"><i class="fa fa-user-o"></i> Login</a>
+				<ul class="dropdown-menu">
+					<li>
+                        <form class="form-inline login-form" action="/examples/actions/confirmation.php" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="text" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<img class="img-responsive" src="{{url_for('static', filename='Hero5.PNG')}}">
+						<div class="carousel-caption">
+							<h3>    eNGCOBO    </h3>
+							<p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p>
+						</div>
+					</div>
+					<div class="item carousel-item">
+						<img class="img-responsive" src="{{url_for('static', filename='Hero2.PNG')}}">
+						<div class="carousel-caption">
+							<h3>Live Monitoring Tools</h3>
+							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus vitae.</p>
+						</div>
+					</div>
+					<div class="item carousel-item">
+						<img class="img-responsive" src="{{url_for('static', filename='profile4.PNG')}}">
+						<div class="carousel-caption">
+							<h3>Attractive Pricing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque tempor quis.</p>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+				<!-- End Carousel Inner -->
+				<ul class="nav nav-pills nav-justified">
+					<li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a href="#" class="nav-link"><strong>About</strong>Lorem ipsum dolor sit amet</a></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a href="#" class="nav-link"><strong>Features</strong> Nesciunt stumpown odio aliqua</a></li>
+					<li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#" class="nav-link"><strong>Pricing</strong> Oullam hendrerit justom leow</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h4 class="font-effect-3d" style="font-family: Maven Pro">.............     <b>uku<sub>H</sub>lala.mobi</b></h4>
+
+    <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

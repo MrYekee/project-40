@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chat With Scwenga</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ChatWithScwenga.css') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='Favicon.png') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro">
+
+    <!-- these 2 below-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--these 2 above-->
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- new Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- end of these last 2 above ha ha haaa -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+<body style="background-color: 	#fdfdfd;">
+
+          <header class="header" style="background-color: white">
+                <div class="container" id="container chat">
+
+                   <img class="img-responsive" id="first" src="{{url_for('static', filename='mainlogo4.PNG')}}">
+
+                          <ul class="menu">
+
+                              <li><button type="button" class="btn btn-link" id="btn-login" data-toggle="modal" data-target="#loginModal">SIGNIN</button></li>
+                              <!--<li><button type="button" class="btn btn-outline-success btn-sm" onClick="location.href='http://127.0.0.1:5000/Registration'"><small>SIGNUP</small></button></li>-->
+                              <li><i class="bi-cart3 fa-2x"></i></li>
+		                  </ul>
+
+				</div>
+
+          </header>
+                 <div class="container-chat">
+                     {% block content %}
+                     {% endblock %}
+                  </div>
+          <div class="container">
+              <!--<div class="row">-->
+                      <h1 style="color: black">NOTHING MUCH, JUST WANT TO CHECK SOMETHING</h1>
+                      <i class="bi-chat fa-lg">custChat</i>
+              <br><br>
+                   <form name="chatForm" action="/MyProfile" method="post">
+                      <textarea id="myChat" rows="2" cols="30" name="custChat" placeholder="text here"></textarea>
+                       <input type="submit" class="btn btn-warning" name="submit" value="Add">
+                   </form>
+
+
+              <!--</div>-->
+
+          </div>
+
+
+</body>
+
+
+</html>

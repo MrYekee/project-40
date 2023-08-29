@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<connectivity>
+  <source name="SQL Server">
+    <option preference="0" type="OLEDB" provider="MSOLEDBSQL"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+      <description>OLE DB Driver for SQL Server</description>
+      <vendor>Microsoft</vendor>
+      <contactUrl>http://www.microsoft.com/data</contactUrl>
+    </option>
+  </source>
+	<source name="Excel">
+		<option preference="0" type="EXCEL" driver=""
+			source="{EA1F8A5D-21C4-44B6-8529-102960968F1E}"
+			destination="{3D9EB354-624C-4AE3-8B81-1865659E4692}">
+			<description>Excel Connection Manager</description>
+			<vendor>Microsoft</vendor>
+		</option>
+	</source>
+	<source name="Flat File">
+		<option preference="0" type="FLATFILE" driver=""
+				source="{4D314831-A269-45DA-9066-23D8828BE102}">
+			<description>SSIS Connection Manager for Flat Files</description>
+			<howtoget>SQL Server Integration Services</howtoget>
+		</option>
+	</source>
+	<source name="DB2">
+		<option preference="0" type="OLEDB" provider="IBMDADB2"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+			<description>IBM OLE DB Provider for DB2</description>
+			<vendor>IBM</vendor>
+			<contactUrl>http://www.ibm.com</contactUrl>
+		</option>
+		<option preference="1" type="OLEDB" provider="DB2OLEDB"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+			<description>Microsoft OLE DB Provider for DB2</description>
+			<vendor>Microsoft</vendor>
+			<contactUrl>http://www.microsoft.com</contactUrl>
+		</option>
+	</source>
+	<source name="Oracle">
+	  <option preference="0" type="MSORA" driver=""
+		  source="{4CAC6073-BCA7-430e-BD29-68A9F0012C6D}"
+		  destination="{3C2D9CC0-74EE-4f64-98E0-4DD374B92068}">
+		<description>Microsoft Oracle Connector by Attunity</description>
+		<vendor>Microsoft</vendor>
+		<contactUrl>http://microsoft.com</contactUrl>
+	  </option>
+    <option preference="1" type="OLEDB" provider="OraOLEDB.Oracle.1"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+      <description>Oracle OLE DB</description>
+			<vendor>Oracle</vendor>
+			<contactUrl>http://oracle.com</contactUrl>
+		</option>
+		<option preference="2" type="OLEDB" provider="MSDAORA"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+			<description>Microsoft OLE DB provider for Oracle</description>
+			<vendor>Microsoft</vendor>
+			<contactUrl>http://microsoft.com</contactUrl>
+		</option>
+    <option preference="3" type="ADO.NET" provider="System.Data.OracleClient"
+            source="{7CDF593F-DE06-4ABD-B356-7976EF7AC8E0}"
+            destination="{7CDF593F-DE06-4ABD-B356-7976EF7AC8E0}">
+      <description>Microsoft ADO.NET provider for Oracle</description>
+		</option>
+	</source>
+	<source name="SAP BI">
+		<option preference="0" type="SAPBI" driver=""
+				source="Microsoft.SqlServer.Dts.SapBw.Components.SapBwSourceOHS, Microsoft.SqlServer.SapBiComponents, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+				destination="Microsoft.SqlServer.Dts.SapBw.Components.SapBwSourceBWLoader, Microsoft.SqlServer.SapBiComponents, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+			<description>Microsoft SAP BI Connector</description>
+			<vendor>Microsoft</vendor>
+			<contactUrl>http://microsoft.com</contactUrl>
+		</option>
+	</source>
+
+	<source name="Sybase">
+		<option preference="0" type="OLEDB" provider="ASEOLEDB"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+			<description>Sybase ASE OLE DB (ASEOLEDB) Provider</description>
+			<vendor>Sybase</vendor>
+			<contactUrl>http://www.sybase.com</contactUrl>
+		</option>
+		<option preference="1" type="OLEDB" provider="Sybase.ASEOLEDBProvider"
+            source="{0AC66534-E2CE-4B6A-99EE-0320EB33AB57}"
+            destination="{B5D38974-BE31-4ABA-85AB-FADAA58E773A}">
+			<description>Sybase ASE OLE DB (Sybase.ASEOLEDBProvider) Provider</description>
+			<vendor>Sybase</vendor>
+			<contactUrl>http://www.sybase.com</contactUrl>
+		</option>
+	</source>
+
+	<source name="Teradata">
+		<option preference="0" type="MSTERA" driver=""
+				source="{58664F3B-262F-4e4b-8AD1-E3FA1B504C1E}"
+				destination="{3703B1C2-3155-4905-9D5B-9DDAB8EB8773}">
+			<description>Microsoft Teradata Connector by Attunity</description>
+			<vendor>Microsoft</vendor>
+			<contactUrl>http://microsoft.com</contactUrl>
+		</option>
+	</source>
+
+</connectivity>

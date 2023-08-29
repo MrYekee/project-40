@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro">
+
+
+    <!-- these 2 below-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--these 2 above-->
+
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+       <style>
+        body{background-color: #EAEDED;
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+
+                   <header class="top-header" style="background-color: white">
+                <div class="container" id="container header">
+
+                    <a href="{{ url_for('home') }}" class="nav-item nav-link"><img class="img-responsive" id="first" src="{{url_for('static', filename='mainlogo3.PNG')}}"></a>
+
+
+                    <!-- temporary-->
+                      <div>
+                          <ul class="nav navbar-nav navbar-right ml-auto">
+			<li class="nav-item dropdown">
+				<a data-toggle="modal" class="nav-link dropdown-toggle" href="#"  data-target="#myModal"><i class="fa fa-user-o"></i> Login</a>
+				<ul class="dropdown-menu">
+					<li>
+                        <!--<form class="form-inline login-form" action="/examples/actions/confirmation.php" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="tex15t" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="text" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>-->
+					</li>
+				</ul>
+			</li>
+		</ul>
+                          <!--end of Temporary-->
+                      </div>
+				</div>
+			  </header>
+
+
+
+
+
+
+
+
+
+                   <div class="container">
+                           <div class="jumbotron text-center" style="background-image: url('static/signupJumbo.png')">
+                               <h2>SIGNUP FORM</h2>
+                           </div>
+                       <div class="col-lg-4 time2time" style="background-color: green; color: white; font-family: Maven Pro;">
+                           <h3>LET'S GET TO KNOW YOU BETTER</h3>
+
+                           <h4>From time to time our shops will sell at major discounts only to the signed up</h4>
+                           <p>Simply fill your details on this form and click the OK button</p>
+
+                       </div>
+
+                       <div class="col-lg-8">
+                           <form name="myForm" action="/Registration" method="post">
+                           <div class="row">
+
+                               <div class="form-group">
+                                  <div class="col-sm-10">
+                                   <!--txtbox NAME-->
+                                      <h4 style="text-align:right">NAME:</h4>
+                                      <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" name="Name">
+                                  </div>
+                               </div>
+
+                               <div class="form-group">
+                               <div class="col-sm-10">
+                                   <!--txt SURNAME-->
+                                   <h4>SURNAME:</h4>
+                                   <input type="text" class="form-control" placeholder="Surname" aria-describedby="basic-addon1" name="Surname">
+                               </div>
+                               </div>
+
+                           </div>
+
+                           <div class="row">
+
+                               <div class="form-group">
+                               <div class="col-sm-10">
+                                   <!--Clan Name-->
+                                   <h4>ISIDUKO:</h4>
+                                   <input type="text" class="form-control" placeholder="Isiduko sakho" aria-describedby="basic-addon1" name="Clan">
+                               </div>
+                               </div>
+
+                               <div class="form-group">
+                               <div class="col-sm-10">
+                                   <!--Address-->
+                                   <h4>UHLALAPHI:</h4>
+                                   <input type="text" class="form-control" placeholder="Uhlala phi. (e.g. Manzana eNgcobo)" aria-describedby="basic-addon1" name="Address">
+                                   <!--<select class="custom-select custom-select-lg mt-3">
+                                        <option selected>Uhlala phi</option>
+                                        <option value="1">CBD - eNGCOBO</option>
+                                        <option value="2">eMsawawa - eNGCOBO</option>
+                                        <option value="3">kuManzana - eNGCOBO</option>
+                                        <option value="3">kuMbhekeni - eNGCOBO</option>
+                                        <option value="3">eMgwali - eNGCOBO</option>
+                                        <option value="3">eQuthubeni - eNGCOBO</option>
+                                        <option value="3">kuBhojane - eNGCOBO</option>
+                                        <option value="3">eMkhanzi - eNGCOBO</option>
+                                        <option value="3">eLucwecwe - eNGCOBO</option>
+                                        <option value="3">eAll Saints - eNGCOBO</option>
+                                        <option value="3">eMthwaku - eNGCOBO</option>
+                                   </select>-->
+
+                               </div>
+                               </div>
+                           </div>
+
+                           <div class="row">
+
+                               <div class="form-group">
+                               <div class="col-sm-10">
+                                   <!--Cell number-->
+                                   <h4>CELLPHONE:</h4>
+                                   <input type="text" class="form-control" placeholder="Your cell number" aria-describedby="basic-addon1" name="Cellnumber">
+                               </div>
+                               </div>
+
+                               <div class="form-group">
+                               <div class="col-sm-10">
+                                   <!--Password-->
+                                   <h4>PASSWORD:</h4>
+                                   <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" name="Password">
+                               </div>
+                               </div>
+                           </div>
+
+                           <div class="row">
+                               <div class="form-group">
+                                   <div class="col-md-8">
+                                       <!--button-->
+                                       <input type="submit" class="btn btn-success" name="submit" value="Add">
+                                   </div>
+                               </div>
+                           </div>
+                           </form>
+                           <p>{{n}}</p>
+                       </div>
+
+                   </div>
+
+
+
+
+             <!----------------------------------------------------- Modal HTML ------------------------------------------>
+<div id="Awesome" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>
+				<h4 class="modal-title w-100">Awesome!</h4>
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+    <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

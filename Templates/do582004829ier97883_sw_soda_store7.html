@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do582004829ier97883_sw_soda_store7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/CounteryOne.css') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela Round">
+     <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+        <!-- these 2 below-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--these 2 above-->
+
+	 <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- new Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- end of these last 2 above ha ha haaa -->
+</head>
+<body>
+
+			  <header>
+                <div class="container" id="container header">
+
+                   <a href="{{ url_for('home') }}" class="nav-item nav-link"><img class="img-responsive" id="first" src="{{url_for('static', filename='mainlogo4.PNG')}}"></a>
+
+                      <div class="menu">
+						  <a href="{{ url_for('home') }}" class="nav-item nav-link"><img class="img-responsive" id="HomeFromSC" src=""><i class="bi-house-fill fa-3x"></i></a>
+                      </div>
+
+				</div>
+			  </header>
+
+			      <div class="container header">
+                     {% block content %}
+                     {% endblock %}
+                  </div>
+
+              <hr>
+
+             <div class="jumbotron scwenga-analysis" style="background-image: url('static/EveryCounter.png')">
+        	     <h1 style="color: #00e6e6; font-family: Varela Round;">SODA WEAR</h1>
+        	     <span class="border border-1 rounded border-lead" align="center" style="color: grey;"><b>Owner's Corner</b></span>
+    	     </div>
+
+              <br>
+
+              <h2 class="OwnerName" align="center">ACKO XHUMA</h2>
+
+              <br>
+              <hr>
+         <div class="Container">
+             <table class="table table-responsive border-warning border-1 rounded" style="font-family: Varela Round;">
+                 <thead class="table-dark">
+                       <tr>
+                           <b><a class="btn btn-dark" href="do582004829ier97883_sw_soda_store7">REFRESH</a>
+                           <a class="btn btn-danger" href="deleteClothes">DELETE</a>
+                           ABANTU ABAFUNA UKU FOWNELWA</b>
+                       </tr>
+                 </thead>
+                  <thead class="Heading-Table-Scwenga" style="background-color: #00e6e6;">
+                       <th>CUSTOMER <b>NUMBER</b></th>
+                       <th>CUSTOMER <b>NAME</b></th>
+                       <th>CELL <b>NUMBER</b></th>
+                       <th>CUSTOMER <b>LOCATION</b></th>
+                       <th><b>CUSTOMER <br> MESSAGE</b></th>
+                  </thead>
+                  <tbody>
+                       {% for cus in customers %}
+                          <tr>
+                             <td>{{ cus.Msg_Num }}</td>
+                             <td>{{ cus.Msg_Name }}</td>
+                             <td>{{ cus.Msg_Cell }}</td>
+                             <td>{{ cus.Msg_Location }}</td>
+                             <td>{{ cus.Msg_Message }}</td>
+                          </tr>
+                       {% endfor %}
+                  </tbody>
+             </table>
+         </div>
+
+
+</body>
+
+<footer>
+	            <br>
+
+
+                    	<div class="dead-end-scwenga" align="center"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-sign-dead-end" viewBox="0 0 16 16">
+                             <path d="M4.783 6v2h.69c.593 0 .886-.359.886-1.002S6.07 6 5.473 6h-.69Zm.333.28h.32c.395 0 .582.24.582.722 0 .48-.186.718-.581.718h-.321V6.28ZM7.82 7.72h-.918v-.602h.863V6.85h-.863v-.57h.917V6H6.571v2H7.82v-.28Zm.573-.274L8.216 8h-.34l.688-2h.371l.689 2h-.352l-.177-.554h-.702Zm.627-.255-.268-.845h-.015l-.27.845h.553ZM9.746 6v2h.69c.593 0 .886-.359.886-1.002S11.032 6 10.436 6h-.69Zm.333.28h.32c.394 0 .582.24.582.722 0 .48-.186.718-.582.718h-.32V6.28Zm-4.173 4.44h.917V11H5.575V9h1.248v.28h-.917v.57h.863v.268h-.863v.602Zm1.489.28V9.56h.013L8.344 11h.292V9h-.32v1.436h-.014L7.369 9h-.293v2h.319Zm1.56 0V9h.69c.596 0 .886.355.886.998S10.238 11 9.645 11h-.69Zm.653-1.72h-.32v1.44h.32c.395 0 .581-.239.581-.718 0-.481-.187-.722-.581-.722Z"/>
+                             <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435Zm-1.4.7a.495.495 0 0 1 .7 0l6.516 6.515a.495.495 0 0 1 0 .7L8.35 14.866a.495.495 0 0 1-.7 0L1.134 8.35a.495.495 0 0 1 0-.7L7.65 1.134Z"/>
+	                         </svg>
+						</div>
+
+                <hr>
+                <p align="center"><small><b><i class="fa fa-copyright"></i>2023 Yekee.</b>  All rights reserved. <b> Version: 1.0.0</b></small></p>
+
+                <br>
+                <br>
+                <!-- <small>Use of this site constitutes acceptance of it's terms & conditions and privacy policy</small><br>-->
+
+                <!-- <button id="scrollToTopBtn">☝️</button>-->
+
+            </footer>
+
+</html>

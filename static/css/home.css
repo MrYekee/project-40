@@ -1,0 +1,983 @@
+
+body {
+     background-color: 	#f2f2f2;
+     color: #cfcfcf;
+     padding-top: 78px; /* this is to make the Body to drop down by 87px to make room for the header at the top  */
+}
+
+/*                   below is the css to make the header fixed. It's also to make it stick to the top          */
+.header {
+       position: fixed;
+ /*      display: flex;   */
+       top: -10px;
+       width: 112%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       z-index: 1;
+}
+         /*                the end of the style to fix the header at the top         */
+
+
+
+
+
+/*                LOGIN BUTTON         */
+#btn-login{
+      color: black;
+      text-shadow: 1px 1px 3px #000000;
+}
+/*                LOGIN BUTTON - ABOVE         */
+
+
+/*this below is the 3 carousel things (shopping) (selling (supplying)*/
+#bottom-navi{
+
+      margin-right: 10px;
+      padding-right: 0px;
+      width: 96%;
+      padding-bottom: 0px;
+}
+
+
+
+/* Login Modal*/
+
+.modal-login {
+	color: #636363;
+	width: 350px;
+}
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-login .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+.modal-login h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+.modal-login .form-control:focus {
+	border-color: #70c5c0;
+}
+.modal-login .form-control, .modal-login .btn {
+	min-height: 40px;
+	border-radius: 3px;
+}
+.modal-login .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+.modal-login .modal-footer {
+	background: #ecf0f1;
+	border-color: #dee4e7;
+	text-align: center;
+	justify-content: center;
+	margin: 0 -20px -20px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.modal-login .modal-footer a {
+	color: #999;
+}
+.modal-login .avatar {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #60c7c1;
+	padding: 15px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-login .avatar img {
+	width: 100%;
+}
+.modal-login.modal-dialog {
+	margin-top: 80px;
+}
+.modal-login .btn, .modal-login .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #60c7c1 !important;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+	background: #45aba6 !important;
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+
+/* above is the login Modal*/
+
+/*             **********      This is the new store inline with latest trends out there  *************          */
+#store-9{
+
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sne-jumbo-intro{
+
+     margin-right: -9px;
+     margin-left: -8px;
+     color: #d07021;
+     background: rgba(0,0,0,0.9);  /*set transparent gray. choose 0.6 or 0.7 or 0.8 or 0.9*/
+}
+
+.sne-marquee{
+      color: #d07021;
+      text-shadow: 1px 1px 0px black;
+}
+
+.ahl-jumbo-intro{
+
+     margin-right: -9px;
+     margin-left: -9px;
+     color: #d07021;
+     background: rgba(76, 175, 80, 0.3);  /*set transparent gray. choose 0.6 or 0.7 or 0.8 or 0.9*/
+   /*  opacity: 0.5;    */
+}
+
+.nangu-jumbo-intro{
+
+     margin-right: -9px;
+     margin-left: -9px;
+     color: #d07021;
+     background: rgba(76, 175, 80, 0.3);  /*set transparent gray. choose 0.6 or 0.7 or 0.8 or 0.9*/
+     /*opacity: 0.5;*/
+}
+
+.sas-jumbo-intro{
+
+     margin-right: -9px;
+     margin-left: -9px;
+     color: #d07021;
+     background: rgba(76, 175, 80, 0.3);  /*set transparent gray. choose 0.6 or 0.7 or 0.8 or 0.9*/
+
+}
+
+
+
+.img-box {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.img-box img {
+	width: 100%;
+	height: 100%;
+/*	display: block; */
+	border-radius: 50%;
+}
+
+.CompanyDescription{
+
+    float: left;
+}
+
+.CompanyName {
+
+    padding: 30px 59px 0 0px;
+    position: absolute;
+    float: right;
+    margin-right: 0px;
+    margin-left: 105px;
+}
+
+#scCarousel{
+
+ /*    width: 100% */
+     margin-right: -23px;
+     margin-left: -8px;
+     margin-top: -21px;
+
+}
+
+/*                ************************ This is the end of the new store ***********************         */
+
+
+
+/* SHADOWS FOR ALL THE WEBSHOP LOGOS*/
+.sassy{
+
+   /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.vov{
+
+    /* box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);  */
+
+}
+
+.zee {
+
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.la {
+
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ewe {
+
+     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ifa {
+
+     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nangu {
+
+     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+/* END OF SHADOW FOR ALL WEBSHOP LOGOS*/
+
+.describe-shop{
+
+      text-shadow: 3px 3px #d9d9d9;
+}
+
+.bi-cart {margin: -13px; font-size: 14px;}
+
+
+.sml {margin-top: -50px;}
+
+.bs-example{
+        margin: 20px;
+}
+
+.navbar{
+        margin-bottom: 1rem;
+}
+
+
+
+.Look {
+
+   margin-right: 10px
+}
+
+.Look li {
+
+   display: inline-block;
+
+}
+
+
+.Rite {
+
+    margin-left: -33px;
+}
+
+
+
+.trouble {
+
+    margin-left: 35px;
+}
+
+/*Header including the Stuck Ups logo and the login buttons*/
+#container header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#first {
+    margin-top: 30px;
+    }
+
+.menu {
+  float: right;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+.menu li {
+  display: inline-block;
+
+
+}
+
+.menu li + li {
+  margin-left: 0px;
+
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+
+/*VOVO Banner text*/
+.jumbotron.vovo-banner-text{
+      margin-left: -5px;
+}
+/*VOVO Banner text*/
+
+
+/*change the color of the SHOP icon next to login*/
+.bi-shop-window{color: green;}
+
+/*below i was increasing the size of the font in the dropdown for webshops*/
+.dropdown-item{font-size: large; text-align: center;}
+
+.webshop-head{text-align: center;}
+
+
+/* le way yila color ye main courasel ngaphansti kweza notes ziyi 2*/
+#carousel-inner-one{
+
+         /*background-color:  #f2f2f2;*/
+         background-color: #efffcc;
+         /*background-color:  #f2f2f2;*/
+
+}
+
+
+
+
+
+/*ZIKONA MODAL - SORRY - UXOLO*/
+
+.modal-confirm {
+	color: #434e65;
+	width: 525px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	background: green;
+	border-bottom: none;
+	position: relative;
+	text-align: center;
+	margin: -20px -20px 0;
+	border-radius: 5px 5px 0 0;
+	padding: 35px;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 36px;
+	margin: 10px 0 7px;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px;
+}
+.modal-confirm .close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	text-shadow: none;
+	opacity: 0.5;
+}
+.modal-confirm .close:hover {
+	opacity: 0.8;
+}
+.modal-confirm .icon-box {
+	color: #fff;
+	width: 95px;
+	height: 95px;
+	display: inline-block;
+	border-radius: 50%;
+	z-index: 9;
+	border: 5px solid #fff;
+	padding: 15px;
+	text-align: center;
+}
+.modal-confirm .icon-box i {
+	font-size: 58px;
+	margin: -2px 0 0 -2px;
+}
+.modal-confirm.modal-dialog {
+	margin-top: 80px;
+}
+.modal-confirm .btn, .modal-confirm .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #eeb711 !important;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border-radius: 30px;
+	margin-top: 10px;
+	padding: 6px 20px;
+	min-width: 150px;
+	border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+	background: #eda645 !important;
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+
+/*END OF ZIKONA - SORRY - UXOLO*/
+
+
+
+
+
+
+
+
+/*Header including the Stuck Ups logo and the login buttons*/
+
+.hero {
+
+    margin-top: -19px;
+}
+
+
+
+.jumbotron {
+
+    padding-bottom: 185px;
+}
+
+@media screen and (min-width: 768px)
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 182px;
+}
+
+.carousel slide bg {
+        /*padding: 8px;*/
+        margin: 0 auto;
+}
+
+
+/* modal for Kamva Cosmetics*/
+.modal-confirm {
+		color: #636363;
+		width: 400px;
+	}
+	.modal-confirm .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+        text-align: center;
+		font-size: 14px;
+	}
+	.modal-confirm .modal-header {
+		border-bottom: none;
+        position: relative;
+	}
+	.modal-confirm h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -10px;
+	}
+	.modal-confirm .close {
+        position: absolute;
+		top: -5px;
+		right: -2px;
+	}
+	.modal-confirm .modal-body {
+		color: #999;
+	}
+	.modal-confirm .modal-footer {
+		border: none;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 13px;
+		padding: 10px 15px 25px;
+	}
+	.modal-confirm .modal-footer a {
+		color: #999;
+	}
+	.modal-confirm .icon-box {
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
+		border-radius: 50%;
+		z-index: 9;
+		text-align: center;
+		border: 3px solid #f15e5e;
+	}
+	.modal-confirm .icon-box i {
+		color: #f15e5e;
+		font-size: 46px;
+		display: inline-block;
+		margin-top: 13px;
+	}
+    .modal-confirm .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #60c7c1;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+		min-width: 120px;
+        border: none;
+		min-height: 40px;
+		border-radius: 3px;
+		margin: 0 5px;
+		outline: none !important;
+    }
+	.modal-confirm .btn-info {
+        background: #c1c1c1;
+    }
+    .modal-confirm .btn-info:hover, .modal-confirm .btn-info:focus {
+        background: #a8a8a8;
+    }
+    .modal-confirm .btn-danger {
+        background: #f15e5e;
+    }
+    .modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+        background: #ee3535;
+    }
+	.trigger-btn {
+		display: inline-block;
+
+	}
+	/* end of Modal for Kamva*/
+
+	/*the start of the Hero thing*/
+
+.carousel {
+ margin: 30px 0;
+ margin-left: 16px;
+
+ /* background: #ccc; */
+}
+.carousel .item {
+ text-align: center;
+ overflow: hidden;
+ height: 475px;
+}
+.carousel .item img {
+ max-width: 100%;
+ /* margin: 0 auto; Align slide image horizontally center in Bootstrap v3 */
+}
+.carousel .carousel-control {
+ width: 100px;
+ height: 100px;
+ background: #000;
+ margin: auto 0;
+ opacity: 0.8;
+}
+.carousel .carousel-control:hover {
+ opacity: 0.9;
+}
+.carousel .carousel-control i {
+ font-size: 41px;
+ margin-top: 3px;
+}
+.carousel-caption h3, .carousel-caption p {
+ color: #fff;
+ display: inline-block;
+ font-family: 'Oswald', sans-serif;
+ text-shadow: none;
+ margin-bottom: 20px;
+}
+.carousel-caption h3 {
+ background: rgba(0,0,0,0.7);  /*set transparent black. choose 0.6 or 0.7 or 0.8 or 0.9*/
+ padding: 12px 24px;
+ font-size: 40px;
+ text-transform: uppercase;
+}
+.carousel-caption p {
+ background: #20b0b9;
+
+ padding: 10px 20px;
+ font-size: 20px;
+ font-weight: 300;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+ margin-left: 4px;
+ margin-right: 4px;
+}
+.carousel-indicators li.active {
+ background: #20b0b9;
+ border-color: #20b0b9;
+}
+.carousel .nav {
+ background: #eee;
+}
+.carousel .nav a {
+ color: #333;
+ border-radius: 0;
+ font-size: 85%;
+ padding: 10px 16px;
+ background: transparent;
+}
+.carousel .nav .nav-item.active a {
+ color: #fff;
+ background: #20b0b9;
+}
+.carousel .nav strong {
+ display: block;
+ font-family: 'Roboto', sans-serif;
+ font-size: 110%;
+ text-transform: uppercase;
+}
+
+.carousel .carousel-inner {
+
+        width: 96%;
+}
+	/* end of the Hero thing */
+
+#brick {
+     background-image: url(nangubg.jpg) no-repeat 50% 50%;
+}
+
+/* --------- code for 2ND TESTIMONIAL ------------------------------ */
+
+h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 70px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	/*background: #1c47e3;*/
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel .carousel-item {
+	color: #999;
+	overflow: hidden;
+	min-height: 120px;
+	font-size: 13px;
+}
+.carousel .media img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 0 15px 0 60px ;
+	position: relative;
+}
+.carousel .testimonial::before {
+	content: "\201C";
+	font-family: Maven Pro,sans-serif;
+	color: #e2e2e2;
+	font-weight: bold;
+	font-size: 68px;
+	line-height: 54px;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	/*color: #1c47e3;*/
+	color: #8fbc54;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 1px 3px;
+	box-sizing: border-box;
+}
+.carousel-indicators li {
+	background: #e2e2e2;
+	border: 4px solid #fff;
+}
+.carousel-indicators li.active {
+	/*color: #fff;*/
+	color: white;
+	/*background: #1c47e3;*/
+	background: white;
+	border: 5px double;
+}
+
+/* --------- END OF 2ND TESTIMONIAL   ------------------------------ */
+
+
+.separate {
+    border: 1px solid light grey;
+    border-style: ridge;
+    margin-bottom: 1px;
+    padding: 0px;
+}
+    /*    .foot {
+
+             border-style: ridge;
+        }*/
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 5px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background: rgba(51, 170, 51, .4); /* Set a background color to transparent green*/
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 8px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: green; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+
+ /* The following ndiyenzele eza mini menu kwezi WEBSHOPS zonke */
+
+.mini-nav{
+
+       display: flex;
+       justify-content: space-around;
+       align-items: left;
+
+}
+
+.mini-nav-links{
+
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        font-size: 14px;
+
+}
+
+.mini-nav-links li{
+         list-style: none;
+
+}
+.mini-nav-links btn{
+
+       letter-spacing: 3px;
+
+}
+
+/* The following ndiyenzele eza mini menu kwezi WEBSHOPS zonke */
+#pSoda{color: #7a7a52;}
+#pLoc{color: #7a7a52;}
+#pFace{color: #7a7a52;}
+/* The above ndiyenzele eza mini menu kwezi WEBSHOPS zonke */
+
+
+.thisgroup{
+
+      display: flex;
+}
+
+
+
+#la-btn{
+
+       background: #997300;
+}
+
+#unstar-btn{
+
+       background: #0000b3;
+       color: orange;
+}
+
+#scwenga-btn{
+
+      background: #404040;
+      color: #ff9933;
+      box-shadow: 3px 3px 5px grey;
+}
+
+#ifa-btn{
+
+      background: black;
+      color: #997300;
+}
+
+#kuhle-btn{
+
+      color: #ff3399;
+      box-shadow: 3px 3px 5px grey;
+}
+
+#IL-btn{
+
+      background-color: #005580;
+      color: #ffcc00;
+      box-shadow: 3px 3px 5px grey;
+}
+
+#Ahl-btn{
+
+      background-color: #00264d;
+      color: #ff531a;
+      box-shadow: 3px 3px 5px grey;
+}
+
+#nangu-btn{
+      background-color: #006600;
+      box-shadow: 3px 3px 5px grey;
+}
+
+#sas-btn{
+      background-color: #990000;
+      color: white;
+      box-shadow: 3px 3px 5px grey;
+      }
+
+#sodo-btn{
+      background-color: #00e6e6;
+      color: orange;
+      box-shadow: 3px 3px 5px grey;
+      }
+.soda-payoff{
+     text-decoration: underline overline dotten #00e6e6;
+}
+
+#wantu-btn{
+      background-color: #bf80ff;
+      color: black;
+      box-shadow: 3px 3px 5px grey;
+      }
+
+/* The above ndiyenzele eza mini menu kwezi WEBSHOPS zonke*/
+
+/*  Below are the shadows for the "main names" of all these shops*/
+
+.IL-Name{
+     text-shadow: 1px 1px 2px #c2c2a3;
+}
+
+.Kuhle-Name{
+     text-shadow: 1px 1px 2px #c2c2a3;
+}
+
+.Sc-Name{
+     text-shadow: 1px 1px 2px #c2c2a3;
+}
+/*  Below are the shadows for the "main names" of all these shops*/
+
+#foods{
+
+     display: flex;
+     width: 110%;
+}
+#foods2{
+
+     display: flex;
+     width: 110%;
+}
+
+
+
+
+
+
+
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .navbar-nav .dropdown-menu a {
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .navbar-form {
+	border: none;
+}
+.navbar .navbar-form-wrapper {
+	padding: 0 15px;
+}
+.navbar .login-form label {
+	color: #888;
+	font-weight: normal;
+}
+.navbar .dropdown-menu.login-form {
+	width: 280px;
+	padding: 20px;
+	left: auto;
+	right: 0;
+	font-size: 14px;
+}
+.navbar .navbar-nav .dropdown-menu.login-form a {
+	padding: 0 !important;
+	color: #5c6ac4;
+	font-weight: normal;
+}
+.navbar .navbar-nav .dropdown-menu.login-form a:hover{
+	text-decoration: underline;
+}
+.navbar .dropdown-menu.login-form .checkbox-inline {
+	margin-top: 10px;
+}
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px){
+	.navbar .dropdown-menu.login-form {
+		width: 100%;
+		padding: 10px 15px;
+		background: transparent;
+		border: none;
+	}
+	.navbar .form-inline {
+		display: block;
+	}
+	.navbar .input-group {
+		width: 100%;
+	}

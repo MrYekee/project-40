@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Messages[<!ELEMENT Messages (Package*)>
+
+<!ELEMENT Package (Error*)>
+<!ATTLIST Package ID CDATA #REQUIRED>
+<!ATTLIST Package DefaultComponent CDATA #REQUIRED>
+
+<!ELEMENT Error (#PCDATA)>
+<!ATTLIST Error Key CDATA #REQUIRED>
+<!ATTLIST Error _locID CDATA "0">
+<!ATTLIST Error Component CDATA #IMPLIED>
+<!ATTLIST Error NativeErrorCode CDATA #REQUIRED>
+<!ATTLIST Error Params CDATA "0">]>
+
+<Messages>
+  <!-- Package TE_ERROR. ID corresponds to the TE_ERROR constant defined in ThriftExtension.h -->
+  <Package ID="200" DefaultComponent="ThriftExtension">
+    <!-- Error thrown when fail to initialize SASL library. -->
+    <Error Key="TEFailedInitializeSaslClientLib" Params="1" NativeErrorCode="0" _locID="200.TEFailedInitializeSaslClientLib">Failed to initialize SASL client library: %1%</Error>
+
+    <!-- Error thrown when using Kerberos over HTTP and the Kerberos token factory has not been initialized. -->
+    <Error Key="TEKrbTokenFactoryNotInitialized" Params="0" NativeErrorCode="1" _locID="200.TEKrbTokenFactoryNotInitialized">Kerberos token factory not initialized while trying to use Kerberos over HTTP(S).</Error>
+
+    <!-- Error thrown when authentication error occurs. -->
+    <Error Key="TEAuthError" Params="0" NativeErrorCode="2" _locID="200.TEAuthError">Error occured during authentication.</Error>
+
+    <!-- Error thrown when driver is using a SASL mechanism to authenticate against a server that is not using SASL. -->
+    <Error Key="TESASLClientToNOSASLServer" Params="1" NativeErrorCode="3" _locID="200.TESASLClientToNOSASLServer">Error occurred while contacting server: %1%. The connection has been configured to use a SASL mechanism for authentication. This error might be due to the server is not using SASL for authentication.</Error>
+
+    <!-- Error thrown when the driver is not using SASL to connection to a server that is using SASL for authentication. -->
+    <Error Key="TENOSASLClientToSASLServer" Params="1" NativeErrorCode="4" _locID="200.TENOSASLClientToSASLServer">Error occurred while contacting server: %1%. The connection has been configured to not use SASL for authentication. This error might be due to the server has been configured to use SASL for authentication.</Error>
+    
+    <!-- Error thrown when non-SSL client tries to connect to SSL enabled server. -->
+    <Error Key="TENonSSLCxnToSSLServerError" Params="1" NativeErrorCode="5" _locID="200.TENonSSLCxnToSSLServerError">Error occurred while contacting server: %1%. This could be because you are trying to establish a non-SSL connection to a SSL-enabled server.</Error>
+
+    <!-- Error thrown when driver tries use SSL to connect to non-SSL enabled server. -->
+    <Error Key="TESSLCxnToNonSSLServerError" Params="1" NativeErrorCode="6" _locID="200.TESSLCxnToNonSSLServerError">Error occurred while contacting server: %1%. This could be because you are trying to establish a SSL connection to a server that does not have SSL enabled.</Error>
+
+    <!-- Error thrown when conversion is not supported. -->
+    <Error Key="TESaslKrbPluginError" Params="2" NativeErrorCode="7" _locID="200.TESaslKrbPluginError">The current connection is trying to use the %1% plugin but the SASL library has already been configured to use the %2% plugin by a previous connection. Using different SASL Kerberos plugins simultaneously in the same application is not supported.</Error>
+
+    <!-- Error thrown when access token expires. -->
+    <Error Key="TEAuthErrorWithDetails" Params="1" NativeErrorCode="8" _locID="200.TEAuthErrorWithDetails">Authentication/authorization error occurred. Error details: %1%</Error>
+
+    <!-- Error thrown when authentication/authorization error occurs when using SASL. -->
+    <Error Key="TESaslError" Params="1" NativeErrorCode="9" _locID="200.TESaslError">Error occurred while authenticating via SASL. Error details: %1%</Error>
+
+    <!-- Error thrown when authentication/authorization error occurs. -->
+    <Error Key="TEAuthTokenExpired" Params="1" NativeErrorCode="10" _locID="200.TEAuthTokenExpired">Access token expired: %1%</Error>
+
+    <!-- Error thrown when driver is using a Binary mechanism to authenticate against a server that is not using Binary. -->
+    <Error Key="TEBinaryClientToNonBinaryServer" Params="1" NativeErrorCode="11" _locID="200.TEBinaryClientToNonBinaryServer">Error occurred while contacting server: %1%. The connection has been configured to use a binary mechanism for authentication. This error might occur if the server is not using a binary mechanism for authentication.</Error>
+
+    <!-- Error thrown when driver is using a HTTP mechanism to authenticate against a server that is not using HTTP. -->
+    <Error Key="TEHTTPClientToNonHTTPServer" Params="1" NativeErrorCode="12" _locID="200.TEHTTPClientToNonHTTPServer">Error occurred while contacting server: %1%. The connection has been configured to use a HTTP mechanism for authentication. This error might be due to the server is not using HTTP for authentication.</Error>
+    
+    <!-- Error thrown when retry-after value is invalid -->
+    <Error Key="TEInvalidRetryAfterValueError" Params="1" NativeErrorCode="13" _locID="200.TEInvalidRetryAfterValueError">Invalid retry-after header value received from server for a %1% HTTP response, unable to retry.</Error>
+    
+    <!-- Error thrown when a detailed message is returned from the server for HTTP connections.-->
+    <Error Key="TEHTTPClientDetailedException" Params="1" NativeErrorCode="14" _locID="200.TEHTTPClientDetailedException">Unexpected response from server during a HTTP connection: %1%.</Error>
+  </Package>
+</Messages>

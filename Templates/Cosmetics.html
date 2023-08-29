@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Sassy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Sassy.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro">
+
+	    <!-- these 2 below-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--these 2 above-->
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	 <!-- new Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- end of these last 2 above ha ha haaa -->
+
+    <!-- yey make sure you dont leave the following if you want that form (when you click buy) to show -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c828f46f-a241-46b7-8380-781f4b324a53";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+
+</head>
+<body>
+
+              <header>
+                <div class="container" id="container header">
+
+                   <a href="{{ url_for('home') }}" class="nav-item nav-link"><img class="img-responsive" id="first" src="{{url_for('static', filename='mainlogo4.PNG')}}"></a>
+
+                      <div class="menu">
+						  <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal" data-target="#myModal"><small>LOGIN</small></button>
+						  <button type="button" class="btn btn-primary btn-block btn-sm"><small>LOGIN with <b>FACEBOOK</b></small></button>
+                      </div>
+
+				</div>
+			  </header>
+
+			      <div class="container header">
+                     {% block content %}
+                     {% endblock %}
+                  </div>
+
+              <hr>
+              <img class="img-responsive kc" src="{{url_for('static', filename='sassy2.PNG')}}">
+
+
+
+
+			         <!-- Modal that contains the login form-->
+                                      <!-- Modal HTML -->
+                                        <div id="myModal" class="modal fade in in">
+	                                        <div class="modal-dialog modal-confirm">
+		                                        <div class="modal-content">
+			                                        <div class="modal-header">
+				                                        <div class="icon-box">
+					                                        <i class="material-icons">&#xE5CD;</i>
+                                                        </div>
+
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                                        </div>
+			                                        <div class="modal-body">
+                                                        <form>
+															<input type="text" class="form-control" placeholder="Cellphone Number" aria-describedby="basic-addon1">
+															<input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+														</form>
+			                                        </div>
+			                                        <div class="modal-footer">
+				                                        <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+
+			                                        </div>
+		                                        </div>
+	                                        </div>
+                                        </div>
+                                      <!-- end of Modal that contains the login form-->
+
+
+
+              <!--start of the catalogue-->
+
+              <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Trending <b>Products</b></h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowoneone.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Hugo Boss Ladies Bag</h4>
+									<p class="item-price"><strike>R650.00</strike> <span>R400.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<button type="button" class="btn btn-primary btn-rounded" data-bs-toggle="collapse" data-bs-target="#myCollapse"><i class="bi-credit-card fa-lg"></i>&ensp;BUY</button>
+
+									                        <div class="collapse" id="myCollapse">
+                                                                    <div class="card card-body">
+
+																		<div class="media-body" style="font-family: Varela Round;">
+																				<h5 class="mt-0">&ensp; &ensp; <b>SEND SASSY A MESSGE</b></h5>
+																				<hr>
+																				<br>
+
+																				<form name ="herForm" action="/About" method="post">
+
+																						  <label for="fname">Name:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+																						  <input type="text" id="fname" name="fname" size="18"><br><br>
+
+																						  <label for="Cnum">Cell number:</label>&ensp;
+																						  <input type="text" id="Cnum" name="Cnum" size="18"><br><br>
+
+																						  <label for="Cloc">Location:</label>&ensp;&ensp;&ensp;&ensp;
+																						  <input type="text" id="Cloc" name="Cloc" size="18"><br><br>
+
+																						  <label for="Fmsg">Message:</label>&ensp;&ensp;&ensp;&ensp;
+																						  <textarea id="myChat" rows="3" cols="17" name="Fmsg" placeholder="I want to hire the fridge, please call me back">I need SAND / CRUSHED STONE, please call me back</textarea><br><br>
+																						  <textarea hidden="hidden" id="MsgOwn" rows="1" cols="1" name="MsgOwner">3</textarea><br>
+																						  <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal"><i class="bi-chat-text"></i>&ensp;Send Message</button>
+																						 <!-- <input name="addMsg" type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal" value="Send Message">-->
+
+																						  <!-- Below is that AWESOME modal -->
+
+																									<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																										  <div class="modal-dialog modal-confirm">
+																											   <div class="modal-content">
+																													<div class="modal-header">
+																														  <div class="icon-box">
+																															   <i class="material-icons">&#xE876;</i>
+																														  </div>
+																														  <h4 class="modal-title w-100">Enkosi!</h4>
+																													</div>
+																													<div class="modal-body">
+																														 <p class="text-center">Your message has been sent to <br>NANGU BRICK YARD.</p>
+																														 <!--<kbd>EXPECT A REPLY ON YOUR CELL NUMBER WITHIN 5MIN</kbd>-->
+																													</div>
+																													<div class="modal-footer">
+																														 <!--<button type="button" onClick="window.location.href='{{ url_for('getFridgeMsg') }}';">OK</button>-->
+																														<!--<input type="submit" class="btn btn-success btn-block" name="submit" value="OK">-->
+																														<!--<a href=#><button class='btn btn-default' onclick="stuckup"></button></a>-->
+																														<!--<input type = "button" id = "mybutton" value = "OK" />-->
+																														<input name="addMsg" type="submit" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#myModal" value="Expect a reply on your cell asap, OK">
+																													</div>
+																											   </div>
+																										  </div>
+																									</div>
+																				</form>
+
+																			</div>
+
+																	</div>
+                                                            </div>
+								</div>
+							</div>
+							<hr>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowonetwo.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Prada Ladies Bag</h4>
+									<p class="item-price"><strike>$R999.00</strike> <span>R500.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowonethree.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>McFleri Ladies bag</h4>
+									<p class="item-price"><strike>R899.00</strike> <span>R500.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowonefour.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Nikon DSLR Bag</h4>
+									<p class="item-price"><strike>R1299.00</strike> <span>R800.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowtwoone.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Sonai Ponny Hair</h4>
+									<p class="item-price"><strike>R900.00</strike> <span>R500.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowtwotwo.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>11" Brazillian Hair</h4>
+									<p class="item-price"><strike>R2990.00</strike> <span>R1000.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowtwothree.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>13" South African frisked dreadlocks</h4>
+									<p class="item-price"><strike>R699.00</strike> <span>R400.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowtwofour.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>8" Peruvian Hair</h4>
+									<p class="item-price"><strike>R3990.00</strike> <span>R1500.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowthreeone.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Prada sun glasses</h4>
+									<p class="item-price"><strike>R700.00</strike> <span>R400.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowthreetwo.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Dolche Hair pins</h4>
+									<p class="item-price"><strike>R250.00</strike> <span>R150.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img class="img-responsive kc" src="{{url_for('static', filename='kamvarowthreethree.PNG')}}">
+								</div>
+								<div class="thumb-content">
+									<h4>Google Pixel Sunglasses</h4>
+									<p class="item-price"><strike>R450.00</strike> <span>R218.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/products/watch.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Apple Watch</h4>
+									<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+              <!--end of the catalogue-->
+
+              <h5>{{n}}</h5>
+
+
+<hr>
+              <p>So there we go ladies. if you are interested just click the <b>ADD TO CARD</b> button to add all the items you like.</p>
+              <p>Once you added all the ones you would like to buy then.....i dont know for now as this app is still under construction, yabona nawe mos haha aha</p>
+              <br>
+              <br>
+              <button type="button" class="btn btn-danger">Delete</button>
+              <br>
+              <br>
+
+
+
+   <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <!-- JS files: jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
