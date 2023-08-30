@@ -35,7 +35,7 @@ app.secret_key = "S@nlam01"
 @app.route("/")
 @app.route("/Home", methods=['GET', 'POST'])
 def home():
-    return render_template('Home.html')
+    return render_template('index.html')
 
 
 # @app.route("/")
